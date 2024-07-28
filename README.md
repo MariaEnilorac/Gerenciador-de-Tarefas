@@ -48,7 +48,7 @@ Certifique-se de ter o Node.js e o npm (ou yarn) instalados em sua máquina.
  ```bash
    npm install -g json-server
 ```
-5.Navegue até o diretório onde está o arquivo db.json (geralmente na raiz do projeto) e inicie o JSON Server:
+5. Navegue até o diretório onde está o arquivo db.json (geralmente na raiz do projeto) e inicie o JSON Server:
 ```bash
 json-server --watch db.json --port 5000
 ```
