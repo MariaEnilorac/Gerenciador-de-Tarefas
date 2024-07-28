@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+# Gerenciador de Tarefas em React 📝 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um simples aplicativo de gerenciamento de tarefas construído com React e uma API local para adicionar, remover e marcar tarefas como concluídas.
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+- [Visão Geral](#visão-geral)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Configuração do Projeto](#configuração-do-projeto)
+- [Como Usar](#como-usar)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-### `npm start`
+## Visão Geral
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este projeto é um gerenciador de tarefas onde você pode:
+- Adicionar novas tarefas.
+- Definir a duração das tarefas.
+- Marcar tarefas como concluídas.
+- Remover tarefas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+O frontend é construído com React e utiliza uma API local para persistir dados. A interface inclui ícones para marcar e remover tarefas, além de um formulário para adicionar novas tarefas.
 
-### `npm test`
+## Tecnologias Utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- **JSON Server**: Para criar uma API RESTful localmente.
+- **CSS**: Para estilização da aplicação.
+- **React Icons**: Biblioteca para ícones.
 
-### `npm run build`
+## Configuração do Projeto
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Certifique-se de ter o Node.js e o npm (ou yarn) instalados em sua máquina.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Clonando o Repositório
 
-### `npm run eject`
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/usuario/gerenciador-tarefas.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.  Navegue até o diretório do projeto:
+ ```bash
+ cd gerenciador-tarefas
+```
+4.  Instale o JSON Server globalmente:
+ ```bash
+   npm install -g json-server
+```
+5.Navegue até o diretório onde está o arquivo db.json (geralmente na raiz do projeto) e inicie o JSON Server:
+```bash
+json-server --watch db.json --port 5000
+```
+6. Instalando Dependências
+ No diretório do projeto, instale as dependências:
+```bash
+npm install
+```
+7. Rodando o Projeto
+Inicie o servidor de desenvolvimento:
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como Usar
+Após iniciar o servidor de desenvolvimento, você pode acessar a aplicação em http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Adicionar Tarefas: Use o formulário disponível para adicionar novas tarefas.
+Marcar Tarefas como Concluídas: Clique no ícone apropriado ao lado da tarefa.
+Remover Tarefas: Clique no ícone de remoção ao lado da tarefa.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribuição
+Se você deseja contribuir para o projeto, sinta-se à vontade para fazer um fork do repositório e enviar pull requests com melhorias e correções.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licença
+Este projeto está licenciado sob a Licença MIT.
+```bash
+Você pode ajustar o link do repositório e qualquer outra informação específica conforme necessário.
+```
