@@ -1,14 +1,15 @@
 .App {
   width: 40%;
   margin: 1em auto;
-  background-color: rgb(203, 11, 203);
+  background-color: rgb(63, 4, 87);
   border-radius: 5px;
-  color: rgb(239, 238, 238);
+  color: rgb(253, 253, 253);
+  margin-top: 4rem;
 }
 
 .todo-header {
   padding: 0.5em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(222, 127, 241);
   text-align: center;
 }
 
@@ -21,7 +22,7 @@
 .form-todo {
   padding: 1em;
   margin: 0 1em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(222, 127, 241);
 }
 
 .form-todo h2,
@@ -53,30 +54,38 @@
 }
 
 .form-control input {
-  border: 1px solid black;
+  border: 1px solid rgb(222, 127, 241);
   border-radius: 2px;
-  background-color: rgb(243, 191, 226);
+  background-color: rgb(247, 247, 247);
   padding: 0.5em;
   color: rgb(0, 0, 0);
   flex-basis: 70%;
   margin-right: 15em;
+  margin-bottom: 0.5em;
 }
 
 input[type="submit"] {
-  background-color: rgb(66, 2, 84);
-  color: aliceblue;
+  background-color: rgb(238, 163, 228);
+  color: rgb(87, 3, 87);
   display: block;
   width: 30%;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 1em;
+  padding: 0.8em;
   cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
   width: 70%;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(87, 3, 87);
+  color: white;
 }
 
 .list-todo {
@@ -93,7 +102,7 @@ input[type="submit"] {
 }
 
 .todo {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(238, 163, 228);
   padding: 1em 0;
 }
 
@@ -103,7 +112,7 @@ input[type="submit"] {
 
 .todo-done {
   text-decoration: line-through;
-  color: rgb(76, 21, 240);
+  color: rgb(110, 167, 241);
 }
 
 .todo p {
@@ -121,125 +130,6 @@ input[type="submit"] {
 .actions span {
   margin-right: 1em;
 }
-.App {
-  width: 40%;
-  margin: 1em auto;
-  background-color: rgb(203, 11, 203);
-  border-radius: 5px;
-  color: rgb(239, 238, 238);
-}
-
-.todo-header {
-  padding: 0.5em;
-  border-bottom: 1px solid black;
-  text-align: center;
-}
-
-.todo-header h1 {
-  margin: 0;
-  color: rgb(255, 255, 255);
-  font-size: 2.2em;
-}
-
-.form-todo {
-  padding: 1em;
-  margin: 0 1em;
-  border-bottom: 1px solid black;
-}
-
-.form-todo h2,
-.list-todo h2 {
-  text-align: center;
-}
-
-.form-control {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 1em;
-}
-
-.form-group {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.form-control label {
-  font-weight: bold;
-  font-size: 0.9em;
-  flex-basis: 30%;
-  text-align: left;
-  margin-right: 1em;
-}
-
-.form-control input {
-  border: 1px solid black;
-  border-radius: 2px;
-  background-color: rgb(243, 191, 226);
-  padding: 0.5em;
-  color: rgb(0, 0, 0);
-  flex-basis: 70%;
-  margin-right: 15em;
-}
-
-input[type="submit"] {
-  background-color: rgb(66, 2, 84);
-  color: aliceblue;
-  display: block;
-  width: 30%;
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 1em;
-  cursor: pointer;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  width: 70%;
-}
-
-.list-todo {
-  padding: 0 1em 8em;
-  margin: 1em 2em;
-}
-
-.list-todo h2 {
-  margin-bottom: 0;
-}
-
-.list-todo p {
-  text-align: center;
-}
-
-.todo {
-  border-bottom: 1px solid black;
-  padding: 1em 0;
-}
-
-.todo h3 {
-  margin-bottom: 0.4em;
-}
-
-.todo-done {
-  text-decoration: line-through;
-  color: rgb(76, 21, 240);
-}
-
-.todo p {
-  text-align: left;
-  font-style: italic;
-  font-size: 0.8em;
-  margin-bottom: 1.5em;
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-}
 
 .todo svg {
   font-size: 1.5em;
@@ -248,9 +138,9 @@ input[type="submit"] {
 }
 
 .todo svg:nth-of-type(1):hover {
-  color: blue;
+  color: rgb(110, 167, 241);
 }
 
 .todo svg:nth-of-type(2):hover {
-  color: red;
+  color: rgb(231, 52, 52);
 }
